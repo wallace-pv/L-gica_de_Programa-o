@@ -7,8 +7,8 @@ function sortear(){
         alert('Do Numero não pode ser maior que o Até o Numero');
         reiniciar();
    }
-   if (quantidade > ate) {
-        alert('A quantidade de numeros nao pode ser maior que o numero maximo');
+   if (quantidade > (ate-de + 1)) {
+        alert('A quantidade de numeros nao pode ser maior que o intervalo entre os numeros');
         reiniciar();
    } else {
     
