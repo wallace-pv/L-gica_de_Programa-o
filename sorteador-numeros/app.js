@@ -3,7 +3,15 @@ function sortear(){
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value);
     console.log(`Quantidade: ${quantidade}, de numero ${de} , até o numero ${ate}`);
-   
+   if(de>ate){
+        alert('Do Numero não pode ser maior que o Até o Numero');
+        reiniciar();
+   }
+   if (quantidade > ate) {
+        alert('A quantidade de numeros nao pode ser maior que o numero maximo');
+        reiniciar();
+   } else {
+    
 function obterNumeroAleatorio(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -22,7 +30,7 @@ function obterNumeroAleatorio(min, max) {
     resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados:  ${sorteados} </label>`;
     //resultado.textContent = `${sorteados}`
     alterarSatatusBotao();
-}
+}}
 
 function alterarSatatusBotao(){
     let botao = document.getElementById('btn-reiniciar');
