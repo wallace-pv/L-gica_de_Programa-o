@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     jogosAlugados = document.querySelectorAll('.dashboard__item__img--rented').length;
     contarEExibirJogosAlugados();
 });
-// se fosse uma function expression const essaPalavraEUmPalindromo = function () {...} deveria importar ou declara-la antes de chamar-la
+// se fosse uma function expression const essaPalavraEUmPalindromo = function () {...} deveria importar ou declara-la antes de chama-la
 function essaPalavraEUmPalindromo(palavra){
     //split é metodo do JS que separa a string em uma array contendo as letras em cada casa
     var separadorDeLetras = palavra.split("");
@@ -71,3 +71,20 @@ function essaPalavraEUmPalindromo(palavra){
     }
 
 }
+//desafio de ordenação 
+function ordenarNumeros(a, b, c) {
+    /*
+     * Cria um array com os números a, b e c.
+     * Utiliza o método .sort() com uma função de comparação para ordenação numérica:
+     * (x, y) => x - y:
+     *   - Se x - y < 0: x vem antes de y.
+     *   - Se x - y > 0: x vem depois de y.
+     *   - Se x - y === 0: a ordem não importa.
+     * Isso garante a ordenação numérica correta, e não lexicográfica (de strings).
+     */
+    const numerosOrdenados = [a, b, c].sort((x, y) => x - y);
+    console.log(`Números ordenados: ${numerosOrdenados.join(', ')}`);
+}
+
+ordenarNumeros(5, 2, 8); // Saída: Números ordenados: 2, 5, 8
+ordenarNumeros(10, 1, 7); // Saída: Números ordenados: 1, 7, 10
