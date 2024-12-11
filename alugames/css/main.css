@@ -130,6 +130,10 @@
     background-color: #01080E;
 }
 
+.dashboard__item__button--jogar {
+    background-color: #b10707;
+}
+
 .hachuras {
     margin-top: 1.5rem;
     margin-right: 33px;
