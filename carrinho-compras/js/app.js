@@ -5,8 +5,17 @@ function adicionar(){
     let produto = document.getElementById('produto').value;
     let quantidade = document.getElementById('quantidade').value;
     let nomeProduto = produto.split('-')[0];
-    let valorDoProduto = produto.split('R$')[1]
+    let valorDoProduto = produto.split('R$')[1];
 
+    if (!produto || produto.trim() === "") {
+        alert("Selecione um produto válido.");
+        return;
+    }
+    if (isNaN(quantidade)||quantidade <=0 ){
+        document.getElementById('quantidade').value=1;
+        alert("Quantidade invalida");
+        return;
+    }
     //calcular o preço, subtotal
     let preco = quantidade * valorDoProduto;
     
@@ -23,13 +32,13 @@ function adicionar(){
     let valorTotal = document.getElementById('valor-total');
      valorTotal.textContent = `R$${totalGeral}`;
     
-     document.getElementById('quantidade').value=0;
+     document.getElementById('quantidade').value=1;
 }
 
 function limpar(){
     document.getElementById('lista-produtos').innerHTML= '';
     document.getElementById('valor-total').textContent='R$ 0';
-    totalGeral = 0
+    totalGeral = 0;
 }
 
 
