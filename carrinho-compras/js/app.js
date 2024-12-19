@@ -41,6 +41,7 @@ function limpar(){
     totalGeral = 0;
 }
 
+//Questões e desafios extras
 
 //questao do curso https://cursos.alura.com.br/forum/topico-editado-473511?hasAccessMGM=true
 
@@ -102,3 +103,4 @@ let tempo = calcularTempoDeViagem(distancia, velocidadeMedia);
 
 console.log(`Custo da viagem: ${custo}`);
 console.log(`Tempo de viagem: ${tempo}`);
+

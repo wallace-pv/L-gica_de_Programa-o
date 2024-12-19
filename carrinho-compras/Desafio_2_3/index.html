@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="meuForm">
+        <label for="campoNome">Nome:</label>
+        <input type="text" id="campoNome" name="nome">
+
+        <label for="campoIdade">Idade:</label>
+        <input type="text" id="campoIdade" name="idade">
+
+        <button type="button" onclick="capturarValores()">Capturar Valores</button>
+
+        <div id='mostraNome'><span>Seu nome e idade irão aparecer aqui.</span></div>
+        <p id="meuParagrafo">Texto original</p>
+        <button type="button" onclick="modificarConteudo()">Modificar Conteúdo</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
