@@ -80,3 +80,32 @@ function comprar() {
     ingressoSelecionado.elemento.textContent = quantidadeDisponivel - quantidade;
     alert("Compra efetuada com sucesso");
 }
+
+//desafios extras
+//verificar par
+function verificarPar(num){
+    let resto = num % 2
+    if (resto != 0){
+        return console.log(`O numeo ${num} não é par`);
+    }else {
+        return console.log(`O numeo ${num} é par`);
+    }
+
+}
+verificarPar (11);
+//conversão de temperatura
+function converterTemperatura (escala, valor){
+    if (escala.toLowerCase()=== "fahrenheit") {
+        let resultadoCelsius = (valor-32)/1.8;
+        return resultadoCelsius;
+    }else if (escala.toLowerCase()=== "celsius") {
+        let resultadoFahrenheit = (valor*1.8)+32;
+        return resultadoFahrenheit;
+    }else{
+        return ("Escala Invalida");
+    }
+
+}
+let FtoC = converterTemperatura ("fahrenheit",74);
+let CtoF = converterTemperatura ("celsius",23.33333333);
+console.log(`Essa temperatura em Celsius fica: ${FtoC.toFixed(2)} e em Fahrenheit fica: ${CtoF.toFixed(2)}`);

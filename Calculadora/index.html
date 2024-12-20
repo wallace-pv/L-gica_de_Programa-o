@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <h1>Calculadora</h1>
+                <div class="container__campo">
+                    <input type="number" id="valor1" class="container__input" placeholder="0">
+                    <input type="number" id="valor2" class="container__input" placeholder="0">
+                </div>
+                <div class="container__botoes">
+                    <button class="container__botao" onclick="somar()">+</button>
+                    <button class="container__botao" onclick="subtrair()">-</button>
+                    <button class="container__botao" onclick="multiplicar()">*</button>
+                    <button class="container__botao" onclick="dividir()">/</button>
+                </div>
+                <div class="container__texto">
+                    <span class="container__texto-azul">Resultado:</span>
+                    <span id="resultado" class="texto__paragrafo">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Evita rolagem */
+}
+
+.container {
+    width: 50%; /* Ajustei a largura */
+    min-height: 30vh; /* Ajustei a altura */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo interno */
+    border-radius: 24px;
+    border: 1px solid #1875E8;
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    background-image: url("img/Ruido.png"); /* Substitua pelo caminho da sua imagem */
+    background-size: 100% 100%;
+    position: relative;
+    padding: 2rem; /* Adicionei padding interno */
+}
+
+.container__conteudo {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center;
+    width: 100%;
+}
+
+.container__informacoes {
+    width: 100%;
+    text-align: center; /* Centraliza o texto */
+}
+
+.container__campo {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.container__input {
+    width: 80px; /* Reduzi a largura */
+    height: 40px; /* Reduzi a altura */
+    border-radius: 8px; /* Reduzi o raio da borda */
+    background-color: #FFF;
+    border: none;
+    color: #1875E8;
+    padding: 0.5rem; /* Reduzi o padding */
+    font-size: 1.2rem; /* Reduzi o tamanho da fonte */
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-align: center; /* Centraliza o texto dentro do input */
+}
+
+.container__botoes {
+    display: flex;
+    gap: 0.5rem; /* Reduzi o gap */
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.container__botao {
+    border-radius: 8px; /* Reduzi o raio da borda */
+    background: #1875E8;
+    padding: 0.5rem 1rem; /* Reduzi o padding */
+    font-size: 1.2rem; /* Reduzi o tamanho da fonte */
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    width: auto; /* Ajusta a largura ao conteúdo */
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 3rem; /* Reduzi o tamanho da fonte */
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.texto__paragrafo {
+    font-size: 1.5rem; /* Reduzi o tamanho da fonte */
+    text-align: center;
+}
+
+.container__texto-azul{
+    text-align: center;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Removi o estilo para a imagem, pois não há imagem neste exemplo */
